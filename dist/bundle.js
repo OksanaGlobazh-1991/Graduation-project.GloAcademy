@@ -1,0 +1,1 @@
+(()=>{"use strict";var e,l,c;e=document.querySelector(".callback-btn"),l=document.getElementById("callback"),c=document.querySelector(".modal-overlay"),e.addEventListener("click",(function(){l.style.display="block",c.style.display="block"}))})();
