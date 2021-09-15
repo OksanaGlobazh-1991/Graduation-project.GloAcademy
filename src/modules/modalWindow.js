@@ -1,4 +1,5 @@
 const modalWindow = () => {
+  
   const callbackBtn = document.querySelectorAll('.callback-btn'),
         modalCallback = document.querySelector('.modal-callback'),
         modalOverlay = document.querySelector('.modal-overlay'),
