@@ -19,9 +19,15 @@ const scroll = () => {
             top: -window.scrollY,
             behavior: 'smooth'
           });
+<<<<<<< HEAD
         })
         
 };
 
 
+=======
+        })    
+};
+
+>>>>>>> scroll
 export default scroll;

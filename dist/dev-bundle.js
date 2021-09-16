@@ -68,10 +68,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!*******************************!*\
   !*** ./src/modules/scroll.js ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar scroll = function scroll() {\n  var scrollBtn = document.querySelector('.up'),\n      servicesSection = document.querySelector('.services-section');\n  var servicesSectionTop = servicesSection.getBoundingClientRect().top; //расстояние от верхнего края до блока\n\n  scrollBtn.style.cssText = 'display: none';\n  window.addEventListener('scroll', function () {\n    if (window.scrollY > servicesSectionTop) {\n      scrollBtn.style.display = 'block';\n    } else {\n      scrollBtn.style.display = 'none';\n    }\n  });\n  scrollBtn.addEventListener('click', function () {\n    window.scrollBy({\n      top: -window.scrollY,\n      behavior: 'smooth'\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scroll);\n\n//# sourceURL=webpack://Diplom/./src/modules/scroll.js?");
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nSyntaxError: D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\src\\\\modules\\\\scroll.js: Unexpected token (22:0)\\n\\n\\u001b[0m \\u001b[90m 20 |\\u001b[39m             behavior\\u001b[33m:\\u001b[39m \\u001b[32m'smooth'\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 21 |\\u001b[39m           })\\u001b[33m;\\u001b[39m\\u001b[0m\\n\\u001b[0m\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 22 |\\u001b[39m \\u001b[33m<<\\u001b[39m\\u001b[33m<<\\u001b[39m\\u001b[33m<<\\u001b[39m\\u001b[33m<\\u001b[39m \\u001b[33mHEAD\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m    |\\u001b[39m \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\u001b[0m\\n\\u001b[0m \\u001b[90m 23 |\\u001b[39m         })\\u001b[0m\\n\\u001b[0m \\u001b[90m 24 |\\u001b[39m         \\u001b[0m\\n\\u001b[0m \\u001b[90m 25 |\\u001b[39m }\\u001b[33m;\\u001b[39m\\u001b[0m\\n    at Parser._raise (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:808:17)\\n    at Parser.raiseWithData (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:801:17)\\n    at Parser.raise (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:762:17)\\n    at Parser.unexpected (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:3267:16)\\n    at Parser.parseExprAtom (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:11556:20)\\n    at Parser.parseExprSubscripts (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:11125:23)\\n    at Parser.parseUpdate (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:11105:21)\\n    at Parser.parseMaybeUnary (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:11083:23)\\n    at Parser.parseMaybeUnaryOrPrivate (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:10897:77)\\n    at Parser.parseExprOps (D:\\\\JS\\\\MAMP\\\\htdocs\\\\Diplom\\\\node_modules\\\\@babel\\\\parser\\\\lib\\\\index.js:10904:23)\");\n\n//# sourceURL=webpack://Diplom/./src/modules/scroll.js?");
 
 /***/ }),
 
@@ -484,11 +483,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-<<<<<<< HEAD
-/******/ 		__webpack_require__.h = () => ("1b4aa25da14f0b79a707")
-=======
-/******/ 		__webpack_require__.h = () => ("fc653318d8bd38d3a036")
->>>>>>> scroll
+/******/ 		__webpack_require__.h = () => ("ba52ae19b8cb1ec8b418")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
