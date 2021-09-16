@@ -1,4 +1,3 @@
-
 const scroll = () => {
   const scrollBtn = document.querySelector('.up'),
         servicesSection = document.querySelector('.services-section'); 
@@ -19,15 +18,9 @@ const scroll = () => {
             top: -window.scrollY,
             behavior: 'smooth'
           });
-<<<<<<< HEAD
-        })
-        
-};
 
-
-=======
         })    
 };
 
->>>>>>> scroll
+
 export default scroll;
