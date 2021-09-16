@@ -7,7 +7,8 @@ const sendForm = () => {
   const statusMessage = document.createElement('div');
   const formName = document.querySelectorAll('input[name="fio"]'),
         formPhone = document.querySelectorAll('input[name="tel"]');
-  statusMessage.style.cssText = 'font-size: 2rem; color: black';
+  
+        statusMessage.style.cssText = 'font-size: 2rem; color: black';
 
   let body;
   let postData = 0;
@@ -59,19 +60,19 @@ const sendForm = () => {
         item.value = item.value.charAt(0).toUpperCase() + item.value.slice(1);
 
     });
-});
-
-formPhone.forEach(item => {
-  item.addEventListener('input', () => {
-      item.value = item.value.replace(/[^0-9+]+/g, '');
   });
-  item.addEventListener('blur', () => {
+
+  formPhone.forEach(item => {
+    item.addEventListener('input', () => {
+      item.value = item.value.replace(/[^0-9+]+/g, '');
+    });
+    item.addEventListener('blur', () => {
       item.value = item.value.replace(/[^0-9\+]+/gi, '');
       item.value = item.value.trim();
       item.value = item.value.replace(/\s+/g, ' ');
   });
 
-});
+  });
   
 };
 export default sendForm;
