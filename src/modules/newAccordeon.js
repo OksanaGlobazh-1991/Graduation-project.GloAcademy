@@ -12,6 +12,7 @@ const newAccordeon = () => {
               arr[i].classList.remove('active');
             }
           })
+          
           elementContent.forEach((item, i, arr) => {
             if (index === i) {
               arr[i].style.display = 'block';
