@@ -5,6 +5,7 @@ import newScroll from './modules/newScroll';
 import newSendForm from './modules/newSendForm';
 import carusel from './modules/carusel';
 import newSlider from './modules/newSlider';
+import servisesOur from './modules/servisesOur';
 
 
 
@@ -15,3 +16,4 @@ newScroll();
 newSendForm();
 carusel();
 newSlider();
+servisesOur();

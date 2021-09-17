@@ -1,11 +1,8 @@
 const modalWindow = () => {
   
-  const callbackBtn = document.querySelectorAll('.callback-btn'),
-        modalCallback = document.querySelector('.modal-callback'),
-        modalOverlay = document.querySelector('.modal-overlay'),
-        modalClose = document.querySelector('.modal-close'),
-        buttonServices = document.querySelector('.button-services');
-
+  const modalCallback = document.querySelector('.modal-callback'),
+        modalOverlay = document.querySelector('.modal-overlay');
+        
         document.addEventListener('click', (event) => {
           let target = event.target;
           if (target.closest('.button-services')) {
@@ -13,6 +10,10 @@ const modalWindow = () => {
             modalOverlay.style.display = 'block';
           }
           if (target.closest('.callback-btn')) {
+            modalCallback.style.display = 'block';
+            modalOverlay.style.display = 'block';
+          }
+          if (target.closest('.fancyboxModal')) {
             modalCallback.style.display = 'block';
             modalOverlay.style.display = 'block';
           }
