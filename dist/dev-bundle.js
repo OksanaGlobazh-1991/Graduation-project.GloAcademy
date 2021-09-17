@@ -517,7 +517,11 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("25513aa990cb2c31f465")
+=======
+/******/ 		__webpack_require__.h = () => ("19d31c6a8dfd46ef9f06")
+>>>>>>> newSlider
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
