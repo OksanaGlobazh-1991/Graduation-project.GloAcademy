@@ -1106,6 +1106,7 @@ video#video_background {
 	position: relative;
 	background: #fff;
 	padding: 15px 15px 0;
+	pointer-events: none;
 }
 .services-section .element .img-wrapper:after {
 	content: "";
@@ -1146,6 +1147,7 @@ video#video_background {
 	text-align: center;
 	text-transform: uppercase;
 	border: 2px solid #fff;
+	pointer-events: all;
 }
 .services-section .element:hover .img-wrapper:before {
 	opacity: 1;
