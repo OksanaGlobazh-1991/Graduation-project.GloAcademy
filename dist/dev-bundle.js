@@ -126,7 +126,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar servisesOur = function servisesOur() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (servisesOur);\n\n//# sourceURL=webpack://Diplom/./src/modules/servisesOur.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar servisesOur = function servisesOur() {\n  var position = 0;\n  var slidesToShow = 1;\n  var slidesToScroll = 1;\n  var sliderTrack = document.querySelector('.slider-track');\n  var sliderItem = document.querySelector('.slide');\n  var sliderItems = document.querySelectorAll('.slide');\n  var itemsCount = sliderItems.length;\n  var prevBtn = document.querySelector('.prev');\n  var nextBtn = document.querySelector('.next');\n  var itemWidth = sliderItem.clientWidth / slidesToShow;\n  var movePosition = slidesToScroll * itemWidth;\n  sliderItems.forEach(function (item) {\n    item.style.minWidth = \"\".concat(itemWidth, \"px\");\n  });\n  prevBtn.addEventListener('click', function () {\n    position += movePosition;\n    setPosition();\n    checkBtn();\n  });\n  nextBtn.addEventListener('click', function () {\n    position -= movePosition;\n    setPosition();\n    checkBtn();\n  });\n\n  var setPosition = function setPosition() {\n    sliderTrack.style.transform = \"translateX(\".concat(position, \"px)\");\n  };\n\n  var checkBtn = function checkBtn() {\n    if (position === 0) {\n      prevBtn.classList.add('btn-disabled');\n    } else {\n      prevBtn.classList.remove('btn-disabled');\n    }\n\n    if (position <= -(itemsCount - slidesToShow) * itemWidth) {\n      nextBtn.classList.add('btn-disabled');\n    } else {\n      nextBtn.classList.remove('btn-disabled');\n    }\n  };\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (servisesOur);\n\n//# sourceURL=webpack://Diplom/./src/modules/servisesOur.js?");
 
 /***/ }),
 
@@ -528,7 +528,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("1682ca5c940f0317cc43")
+/******/ 		__webpack_require__.h = () => ("2de658c753d7a88722ce")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
