@@ -34,7 +34,7 @@ const servisesOur = () => {
    };
 
    const checkBtn = () =>{
-      if(position===0){
+      if(position === 0){
          prevBtn.classList.add('btn-disabled');
       } else {
          prevBtn.classList.remove('btn-disabled');

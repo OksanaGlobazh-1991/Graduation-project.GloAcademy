@@ -1237,7 +1237,7 @@ video#video_background {
 /**** /. services section *****/
 .slider {
 	position: relative;
-	width: 380px;
+	width: 1200px;
 	height: 470px;
 	margin: 0px auto ;
 	user-select: none;
@@ -1257,7 +1257,7 @@ video#video_background {
 	display: flex;
 }
 .slide {
-	width: 400px;
+	min-width: 420px;
 	height: 440px;
 	flex-shrink: 0;
 	display: flex;
