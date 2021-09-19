@@ -25,6 +25,7 @@ const newSendForm = () => {
           [...form].forEach(input => {
               input.value = '';
           });
+        // formName.value = '';
 
           postData(body)
               .then(response => {
